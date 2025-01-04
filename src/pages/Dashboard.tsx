@@ -1,5 +1,5 @@
-import { DashboardStats } from '../components/DashboardStats';
-import { SalesChart } from '../components/SalesChart';
+import { DashboardStats } from '../components/dashboard/DashboardStats';
+import { SalesChart } from '../components/dashboard/SalesChart';
 
 export function Dashboard() {
     return (

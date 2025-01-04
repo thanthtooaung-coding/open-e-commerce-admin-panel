@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
-import { Layout } from './components/Layout';
+import { Layout } from './components/shared/Layout';
 import { Dashboard } from './pages/Dashboard';
 import { Products } from './pages/Products';
 import { OrderLists } from './pages/OrderLists';
+import { NotFound } from './pages/NotFound';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
             <Route index element={<Dashboard />} />
             <Route path="/products" element={<Products />} />
             <Route path="/order-lists" element={<OrderLists />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Router>

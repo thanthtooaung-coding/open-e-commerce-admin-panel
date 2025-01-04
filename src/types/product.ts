@@ -1,11 +1,15 @@
-export interface Product {
+export type Product = {
     id: string;
     name: string;
-    status: 'In Stock' | 'Low Stock' | 'Out of Stock';
+    status: string;
     price: number;
     category: string;
     quantity: number;
-}
+    image: string;
+    skuCode?: string;
+    productionDate?: string;
+    supplier?: string;
+};
 
 export interface SortConfig {
     key: keyof Product | null;
