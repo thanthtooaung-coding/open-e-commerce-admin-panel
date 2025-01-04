@@ -5,60 +5,7 @@ import { ProductDetails } from '../components/product/ProductDetails';
 import { ProductSkeleton } from '../components/product/ProductSkeleton';
 import { ErrorState } from '../components/ui/ErrorState';
 
-// const initialProducts: Product[] = [
-//     {
-//         id: '1',
-//         name: 'Wireless Mouse',
-//         status: 'In Stock',
-//         price: 25.99,
-//         category: 'Electronics',
-//         quantity: 100,
-//         image: '/product-image.jpg' // Add your image path
-//     },
-//     {
-//         id: '2',
-//         name: 'Wireless Keyboard',
-//         status: 'In Stock',
-//         price: 25.99,
-//         category: 'Electronics',
-//         quantity: 100,
-//         image: '/product-image.jpg' // Add your image path
-//     },
-//     {
-//         id: '3',
-//         name: 'Gaming Keyboard',
-//         status: 'In Stock',
-//         price: 25.99,
-//         category: 'Electronics',
-//         quantity: 100,
-//         image: '/product-image.jpg' // Add your image path
-//     },
-//     {
-//         id: '4',
-//         name: 'Wireless Mouse',
-//         status: 'In Stock',
-//         price: 25.99,
-//         category: 'Electronics',
-//         quantity: 100,
-//         image: '/product-image.jpg' // Add your image path
-//     },
-
-//     {
-//         id: '5',
-//         name: 'Wireless Mouse',
-//         status: 'In Stock',
-//         price: 25.99,
-//         category: 'Electronics',
-//         quantity: 100,
-//         image: '/product-image.jpg' // Add your image path
-//     },
-//     // ... more products
-// ];
-
-
-
 export function Products() {
-    // const [products] = useState<Product[]>(initialProducts);
     const [products, setProducts] = useState<Product[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -109,8 +56,8 @@ export function Products() {
                     <div className="h-10 bg-gray-200 dark:bg-gray-700 rounded w-40 animate-pulse" />
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4">
-                    {[...Array(10)].map((_, index) => (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                    {[...Array(12)].map((_, index) => (
                         <ProductSkeleton key={index} />
                     ))}
                 </div>
@@ -153,7 +100,7 @@ export function Products() {
                 </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                 {filteredProducts.map((product) => (
                     <div key={product.id} className="bg-white dark:bg-gray-800 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-md transition-shadow">
                         <div className="p-3 sm:p-4">
