@@ -17,7 +17,7 @@ export function Header({ isSidebarOpen }: { isSidebarOpen: boolean }) {
                 </button>
                 <div className="flex items-center gap-3">
                     <img
-                        src="/placeholder.svg"
+                        src="https://imageio.forbes.com/specials-images/imageserve/5f8b7d5b7bfb80504e57c0b9/Suzy-Bae-stars-in--Start-Up---as-a-young-women-with-a-business-idea-but-no-funds-/0x0.png?format=png&crop=854,580,x0,y6,safe&width=960"
                         alt="Profile"
                         className="w-8 h-8 rounded-full"
                     />
