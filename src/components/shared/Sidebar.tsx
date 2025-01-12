@@ -18,11 +18,11 @@ const menuItems = [
     { path: '/', name: 'Dashboard', icon: LayoutDashboard },
     { path: '/products', name: 'Products', icon: Package },
     { path: '/order-lists', name: 'Order Lists', icon: ClipboardList },
-    { path: '/product-stock', name: 'Product Stock', icon: Box },
+    { path: '/pages', name: 'Pages', icon: Box },
+    { path: '/owners', name: 'Owners', icon: Users },    
     { path: '/to-do', name: 'To-Do', icon: CheckSquare },
     { path: '/contact', name: 'Contact', icon: Contact },
-    { path: '/invoice', name: 'Invoice', icon: FileText },
-    { path: '/team', name: 'Team', icon: Users },
+    { path: '/invoice', name: 'Invoice', icon: FileText },    
     { path: '/settings', name: 'Settings', icon: Settings },
 ];
 
